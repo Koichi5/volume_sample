@@ -18,7 +18,7 @@ struct ContentView: View {
         VStack {
             RealityView { content in
                 // Add the initial RealityKit content
-                if let scene = try? await Entity(named: "Scene2", in: realityKitContentBundle) {
+                if let scene = try? await Entity(named: "Scene3", in: realityKitContentBundle) {
                     let animation = scene.availableAnimations[0]
                     scene.playAnimation(animation.repeat())
                     content.add(scene)
