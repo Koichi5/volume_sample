@@ -11,7 +11,14 @@ import SwiftUI
 struct volume_sampleApp: App {
     var body: some Scene {
         WindowGroup {
+//            PlanetsContentView()
             ContentView()
-        }.windowStyle(.volumetric)
+        }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 1, height: 1, depth: 1, in: .meters)
+        
+//        ImmersiveSpace(id: "saturn") {
+//            PlanetsView()
+//        }
     }
 }
